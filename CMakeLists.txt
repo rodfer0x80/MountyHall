@@ -10,7 +10,7 @@ include_directories(include)
 # ---- Main app ----
 add_executable(MountyHall
   src/main.cpp
-  src/worker.cpp
+  src/simulation.cpp
 )
 
 # ---- GoogleTest setup ----
@@ -26,19 +26,19 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 include(GoogleTest)
 
-add_executable(test_worker
-  tests/test_worker.cpp
-  src/worker.cpp
+add_executable(test_simulation
+  tests/test_simulation.cpp
+  src/simulation.cpp
 )
 
-target_include_directories(test_worker PRIVATE include)
-target_link_libraries(test_worker
+target_include_directories(test_simulation PRIVATE include)
+target_link_libraries(test_simulation
   GTest::gtest
   GTest::gtest_main
   pthread
 )
 
-gtest_discover_tests(test_worker
+gtest_discover_tests(test_simulation
   WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
   DISCOVERY_TIMEOUT 10
 )

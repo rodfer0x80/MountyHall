@@ -1,3 +1,9 @@
+# Custom
+.env
+Testing
+build/*
+results.txt
+
 # Prerequisites
 *.d
 

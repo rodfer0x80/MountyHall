@@ -7,5 +7,8 @@ if [[ "${TRACE-0}" == "1" ]]; then
     set -o xtrace
 fi
 
-rm -rf ./build/*
-rm ./results.txt
+rm -rf ./build/* \
+  ./tests/Testing \
+  ./Testing \
+  ./output.txt \
+  ./test_output.txt
