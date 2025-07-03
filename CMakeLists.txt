@@ -4,8 +4,16 @@ project(MountyHall VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# ---- Find Python and NumPy ----
+find_package(Python3 REQUIRED COMPONENTS Interpreter Development NumPy)
+
 # ---- Include directories ----
-include_directories(include external)
+include_directories(
+  include 
+  external
+  ${Python3_INCLUDE_DIRS}
+  ${Python3_NumPy_INCLUDE_DIRS}
+)
 
 # ---- Main app ----
 add_executable(MountyHall
@@ -14,6 +22,9 @@ add_executable(MountyHall
   src/plot.cpp
   src/simulation.cpp
 )
+
+# Link Python libraries
+target_link_libraries(MountyHall PRIVATE ${Python3_LIBRARIES})
 
 # ---- GoogleTest setup ----
 include(FetchContent)
