@@ -7,6 +7,7 @@ if [[ "${TRACE-0}" == "1" ]]; then
     set -o xtrace
 fi
 
-cd build
-ctest
+mkdir -p ./data/tests
+cd ./build
+ctest --output-on-failure
 cd ..

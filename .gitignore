@@ -1,8 +1,6 @@
 # Custom
 .env
-Testing
-build/*
-data/*
+tests/Testing
 
 # Prerequisites
 *.d

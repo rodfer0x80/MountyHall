@@ -10,6 +10,8 @@ include_directories(include)
 # ---- Main app ----
 add_executable(MountyHall
   src/main.cpp
+  src/utils.cpp
+  src/plot.cpp
   src/simulation.cpp
 )
 
@@ -28,6 +30,7 @@ include(GoogleTest)
 
 add_executable(test_simulation
   tests/test_simulation.cpp
+  src/utils.cpp
   src/simulation.cpp
 )
 
