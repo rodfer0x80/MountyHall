@@ -1,0 +1,5 @@
+add_test([=[EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists]=]  /home/rodfer/workspace/projects/MountyHall/build/test_utils [==[--gtest_filter=EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists]=]  PROPERTIES WORKING_DIRECTORY /home/rodfer/workspace/projects/MountyHall SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists]=]  /home/rodfer/workspace/projects/MountyHall/build/test_utils [==[--gtest_filter=EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists]=]  PROPERTIES WORKING_DIRECTORY /home/rodfer/workspace/projects/MountyHall SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_utils_TESTS EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists)

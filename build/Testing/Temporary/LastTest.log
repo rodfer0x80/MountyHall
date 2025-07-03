@@ -1,0 +1,219 @@
+Start testing: Jul 03 22:21 WEST
+----------------------------------------------------------
+1/8 Testing: EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists
+1/8 Test: EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_utils" "--gtest_filter=EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EnsureDirectoryExistsTest
+[ RUN      ] EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists
+[       OK ] EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists (0 ms)
+[----------] 1 test from EnsureDirectoryExistsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists" end time: Jul 03 22:21 WEST
+"EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists
+2/8 Test: EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_utils" "--gtest_filter=EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EnsureDirectoryExistsTest
+[ RUN      ] EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists
+[       OK ] EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists (0 ms)
+[----------] 1 test from EnsureDirectoryExistsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists" end time: Jul 03 22:21 WEST
+"EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: SimulationTest.OutputFileCreated
+3/8 Test: SimulationTest.OutputFileCreated
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.OutputFileCreated" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.OutputFileCreated" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.OutputFileCreated
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.OutputFileCreated
+[       OK ] SimulationTest.OutputFileCreated (0 ms)
+[----------] 1 test from SimulationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.OutputFileCreated" end time: Jul 03 22:21 WEST
+"SimulationTest.OutputFileCreated" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: SimulationTest.OutputFileNotEmpty
+4/8 Test: SimulationTest.OutputFileNotEmpty
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.OutputFileNotEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.OutputFileNotEmpty" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.OutputFileNotEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.OutputFileNotEmpty
+[       OK ] SimulationTest.OutputFileNotEmpty (1 ms)
+[----------] 1 test from SimulationTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.OutputFileNotEmpty" end time: Jul 03 22:21 WEST
+"SimulationTest.OutputFileNotEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: SimulationTest.OutputFormatIsCorrect
+5/8 Test: SimulationTest.OutputFormatIsCorrect
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.OutputFormatIsCorrect" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.OutputFormatIsCorrect" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.OutputFormatIsCorrect
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.OutputFormatIsCorrect
+[       OK ] SimulationTest.OutputFormatIsCorrect (0 ms)
+[----------] 1 test from SimulationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.OutputFormatIsCorrect" end time: Jul 03 22:21 WEST
+"SimulationTest.OutputFormatIsCorrect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: SimulationTest.WinLossSumMatchesRuns
+6/8 Test: SimulationTest.WinLossSumMatchesRuns
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.WinLossSumMatchesRuns" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.WinLossSumMatchesRuns" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.WinLossSumMatchesRuns
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.WinLossSumMatchesRuns
+[       OK ] SimulationTest.WinLossSumMatchesRuns (0 ms)
+[----------] 1 test from SimulationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.WinLossSumMatchesRuns" end time: Jul 03 22:21 WEST
+"SimulationTest.WinLossSumMatchesRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: SimulationTest.RemainderThreadSplitMatchesRuns
+7/8 Test: SimulationTest.RemainderThreadSplitMatchesRuns
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.RemainderThreadSplitMatchesRuns" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.RemainderThreadSplitMatchesRuns" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.RemainderThreadSplitMatchesRuns
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.RemainderThreadSplitMatchesRuns
+[       OK ] SimulationTest.RemainderThreadSplitMatchesRuns (0 ms)
+[----------] 1 test from SimulationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.RemainderThreadSplitMatchesRuns" end time: Jul 03 22:21 WEST
+"SimulationTest.RemainderThreadSplitMatchesRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: SimulationTest.ProbabilitiesAsExpected
+8/8 Test: SimulationTest.ProbabilitiesAsExpected
+Command: "/home/rodfer/workspace/projects/MountyHall/build/test_simulation" "--gtest_filter=SimulationTest.ProbabilitiesAsExpected" "--gtest_also_run_disabled_tests"
+Directory: /home/rodfer/workspace/projects/MountyHall
+"SimulationTest.ProbabilitiesAsExpected" start time: Jul 03 22:21 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/rodfer/workspace/projects/MountyHall/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SimulationTest.ProbabilitiesAsExpected
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimulationTest
+[ RUN      ] SimulationTest.ProbabilitiesAsExpected
+[       OK ] SimulationTest.ProbabilitiesAsExpected (83 ms)
+[----------] 1 test from SimulationTest (83 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (83 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"SimulationTest.ProbabilitiesAsExpected" end time: Jul 03 22:21 WEST
+"SimulationTest.ProbabilitiesAsExpected" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 03 22:21 WEST

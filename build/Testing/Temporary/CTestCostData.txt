@@ -1,0 +1,9 @@
+EnsureDirectoryExistsTest.CreatesDirectoryIfNotExists 1 0.00305806
+EnsureDirectoryExistsTest.DoesNothingIfDirectoryAlreadyExists 1 0.00229296
+SimulationTest.OutputFileCreated 1 0.00256916
+SimulationTest.OutputFileNotEmpty 1 0.00438721
+SimulationTest.OutputFormatIsCorrect 1 0.00351558
+SimulationTest.WinLossSumMatchesRuns 1 0.00345033
+SimulationTest.RemainderThreadSplitMatchesRuns 1 0.00292939
+SimulationTest.ProbabilitiesAsExpected 1 0.0854641
+---
