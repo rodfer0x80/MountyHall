@@ -2,3 +2,4 @@ clang
 cmake
 ninja
 gtest
+qt6-base
