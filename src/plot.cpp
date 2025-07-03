@@ -1,5 +1,8 @@
 #include "plot.hpp"
 
-void render_plot(){
-  return;
+namespace plt = matplotlibcpp;
+
+void render_plot() {
+  plt::plot({1, 3, 2, 4});
+  plt::show();
 }

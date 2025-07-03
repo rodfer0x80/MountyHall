@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 
   app.add_option("-n,--num", num_runs, "Number of simulation to run");
   app.add_option("-o,--output", output_file, "Output file name (CSV)");
-  app.add_option("-p,--plot", plot, "Render stats in a plot UI");
+  app.add_flag("-p,--plot", plot, "Render stats in a plot UI");
 
   CLI11_PARSE(app, argc, argv);
 
