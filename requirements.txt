@@ -2,4 +2,5 @@ clang
 cmake
 ninja
 gtest
-qt6-base
+python3
+python-matplotlib
