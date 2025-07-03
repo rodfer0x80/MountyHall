@@ -11,3 +11,4 @@ mkdir -p ./data/tests
 cd ./build
 ctest --output-on-failure
 cd ..
+rm -rf ./data/tests
