@@ -7,6 +7,6 @@ if [[ "${TRACE-0}" == "1" ]]; then
     set -o xtrace
 fi
 
-rm -rf ./build/* \
+rm -rf ./build/* ./build/.ninja_log ./build/.ninja_deps \
   ./data/* \
   ./tests/Testing \
