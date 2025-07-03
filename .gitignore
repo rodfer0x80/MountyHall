@@ -1,4 +1,2 @@
 .env
 tests/Testing
-data/*
-build/*
