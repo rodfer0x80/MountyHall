@@ -28,6 +28,22 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 include(GoogleTest)
 
+add_executable(test_utils
+  tests/test_utils.cpp
+  src/utils.cpp
+)
+
+target_include_directories(test_utils PRIVATE include)
+target_link_libraries(test_utils
+  GTest::gtest
+  GTest::gtest_main
+)
+
+gtest_discover_tests(test_utils
+  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+  DISCOVERY_TIMEOUT 10
+)
+
 add_executable(test_simulation
   tests/test_simulation.cpp
   src/utils.cpp
