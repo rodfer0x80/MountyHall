@@ -2,7 +2,7 @@
 .env
 Testing
 build/*
-results.txt
+data/*
 
 # Prerequisites
 *.d

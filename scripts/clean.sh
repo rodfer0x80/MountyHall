@@ -8,7 +8,5 @@ if [[ "${TRACE-0}" == "1" ]]; then
 fi
 
 rm -rf ./build/* \
+  ./data/* \
   ./tests/Testing \
-  ./Testing \
-  ./output.txt \
-  ./test_output.txt
