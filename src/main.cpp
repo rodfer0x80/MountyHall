@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 
   run_simulation(num_runs, output_file);
   if (plot) {
-    render_plot();
+    render_plot(output_file);
   }
   return 0;
 }
