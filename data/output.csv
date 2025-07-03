@@ -1,4 +1,0 @@
-runs:1000000,strategy:hold,wins:333491,losses:666509
-runs:1000000,strategy:hold,wins:332872,losses:667128
-runs:1000000,strategy:switch,wins:666608,losses:333392
-runs:1000000,strategy:switch,wins:667100,losses:332900

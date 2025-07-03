@@ -1,5 +1,0 @@
-if(EXISTS "/home/rodfer/workspace/projects/MountyHall/build/test_utils[1]_tests.cmake")
-  include("/home/rodfer/workspace/projects/MountyHall/build/test_utils[1]_tests.cmake")
-else()
-  add_test(test_utils_NOT_BUILT test_utils_NOT_BUILT)
-endif()
