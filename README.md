@@ -1,10 +1,13 @@
 # MountyHall
 
-> Results
+## Results
+As expected from statistical analysis of the problem, 
+the 'hold' strategy yields a win 1/3 of the times ----------
+the 'switch' strategy does so 2/3 of the times
 ![Results](./imgs/results.png)
 
 
-> Requirements
+## Requirements
 ````
 clang
 gtest
@@ -14,7 +17,7 @@ python3
 python-matplotlib
 ```` 
 
-> Instructions
+## Instructions
 ````
 Build to ./build using ninja and cmake
     $ make build
