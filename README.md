@@ -1,12 +1,5 @@
 # MountyHall
 
-## Results
-As expected from statistical analysis of the problem, 
-the 'hold' strategy yields a win 1/3 of the times ----------
-the 'switch' strategy does so 2/3 of the times
-![Results](./imgs/results.png)
-
-
 ## Requirements
 ````
 clang
@@ -42,3 +35,8 @@ Flags
     -n, --num -> number of runs (per each of the 2 strategies and divided by 2 threads each)
     -p, --plot -> plot the data in a qt6 graph plot
 ```` 
+
+## Results
+As expected from statistical analysis of the problem, the 'hold' strategy yields a win 1/3 of the times the 'switch' strategy does so 2/3 of the times
+![Results](./imgs/results.png)
+
