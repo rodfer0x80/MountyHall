@@ -46,7 +46,7 @@ void render_plot(std::string &filename) {
     win_rates.push_back(rate);
   }
 
-  plt::figure_size(800, 1200);
+  plt::figure_size(600, 600);
   std::vector<double> x_pos = {0, 1};
   plt::bar(std::vector<double>{x_pos[0]}, std::vector<double>{win_rates[0]},
            "blue");
@@ -61,6 +61,14 @@ void render_plot(std::string &filename) {
   plt::xlabel("Strategy");
   plt::ylabel("Win Rate (%)");
   plt::title("Monty Hall Simulation");
-  plt::ylim(0, 110); 
-  plt::show();
+  plt::ylim(0, 110);
+  std::string img_filename = filename;
+  size_t ext_pos = img_filename.rfind(".csv");
+  if (ext_pos != std::string::npos) {
+    img_filename.replace(ext_pos, 4, ".png");
+  } else {
+    img_filename += ".png"; 
+  }
+  plt::save(img_filename);
+  // plt::show();
 }

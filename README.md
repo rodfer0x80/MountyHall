@@ -23,6 +23,8 @@ Run tests in ./tests
 Run ./build/MountyHall executable
     $ make run 
     >> ./data
+    >> ./data/output.csv 
+    >> ./data/output.png
 
 Clean ./data, ./build and ./tests/Testing
     $ make clean 
