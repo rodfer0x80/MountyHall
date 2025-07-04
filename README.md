@@ -1,5 +1,9 @@
 # MountyHall
 
+> Results
+![Results](./imgs/results.png)
+
+
 > Requirements
 ````
 clang

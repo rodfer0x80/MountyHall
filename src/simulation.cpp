@@ -109,7 +109,7 @@ void run_simulation(int num_run, const std::string &output_file) {
     t.join();
 
   std::lock_guard<std::mutex> lock(file_mutex);
-  std::ofstream file(output_file, std::ios::app);
+  std::ofstream file(output_file, std::ios::trunc);
   if (!file) {
     std::cerr << "Failed to open output file: " << output_file << "\n";
     return;

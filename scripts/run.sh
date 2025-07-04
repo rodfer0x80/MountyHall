@@ -9,4 +9,4 @@ fi
 
 PROJECT_NAME="MountyHall"
 
-./build/$PROJECT_NAME -n 2000000 -o ./data/output.csv
+./build/$PROJECT_NAME -n 2000000 -o ./data/output.csv -p
