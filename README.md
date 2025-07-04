@@ -39,5 +39,5 @@ Flags
 ## Results
 As expected from statistical analysis of the problem, the 'hold' strategy yields a win 1/3 of the times and the 'switch' strategy does so 2/3 of the times. 
 cqd___
-<img src="./imgs/results.png" alt="Results" width="400" />
+<img src="./imgs/results.png" alt="Results" width="1200" height="800" />
 
