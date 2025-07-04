@@ -37,6 +37,7 @@ Flags
 ```` 
 
 ## Results
-As expected from statistical analysis of the problem, the 'hold' strategy yields a win 1/3 of the times the 'switch' strategy does so 2/3 of the times
+As expected from statistical analysis of the problem, the 'hold' strategy yields a win 1/3 of the times and the 'switch' strategy does so 2/3 of the times. 
+cqd__
 ![Results](./imgs/results.png)
 
