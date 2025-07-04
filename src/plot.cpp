@@ -46,7 +46,7 @@ void render_plot(std::string &filename) {
     win_rates.push_back(rate);
   }
 
-  plt::figure_size(800, 600);
+  plt::figure_size(800, 1200);
   std::vector<double> x_pos = {0, 1};
   plt::bar(std::vector<double>{x_pos[0]}, std::vector<double>{win_rates[0]},
            "blue");
