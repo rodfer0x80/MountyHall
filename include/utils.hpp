@@ -1,13 +1,12 @@
 #pragma once
 
-#include <iostream>
 #include <string>
 #include <sys/stat.h>
 #include <sys/types.h>
 
 #include <logger.hpp>
 
-void ensure_directory_exists(const std::string &path) {
+inline void ensure_directory_exists(const std::string &path) {
   struct stat info;
   log(DEBUG, "Ensuring directory " + path + " exists ...");
   if (stat(path.c_str(), &info) != 0) {
