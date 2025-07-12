@@ -1,4 +1,5 @@
 #include "simulation.hpp"
+#include "logger.hpp"
 
 std::mutex file_mutex;
 
@@ -86,10 +87,10 @@ void run_simulation(int num_run, const std::string &output_file) {
   int threads_per_strategy = num_threads / num_strategies;
   int runs_per_thread = num_run / threads_per_strategy;
   int remainder = num_run % threads_per_strategy;
-  
+
   std::vector<std::string> outputs(num_threads);
   std::array<std::thread, num_threads> threads;
-  
+
   for (int strategy_id = 0; strategy_id < num_strategies; ++strategy_id) {
     std::string strategy_name = (strategy_id == 0) ? "hold" : "switch";
 
@@ -111,10 +112,11 @@ void run_simulation(int num_run, const std::string &output_file) {
   std::lock_guard<std::mutex> lock(file_mutex);
   std::ofstream file(output_file, std::ios::trunc);
   if (!file) {
-    std::cerr << "Failed to open output file: " << output_file << "\n";
+    log(ERROR, "Failed to open output file: " + output_file);
     return;
   }
   for (const auto &line : outputs) {
     file << line;
   }
+  log(INFO, "Saved simulation data to file " + output_file);
 }

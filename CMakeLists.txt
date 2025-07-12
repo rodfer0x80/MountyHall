@@ -23,7 +23,6 @@ include_directories(
 # ---- Main app ----
 add_executable(MountyHall
   src/main.cpp
-  src/utils.cpp
   src/plot.cpp
   src/simulation.cpp
 )
@@ -52,7 +51,6 @@ include(GoogleTest)
 # ---- Unit Test: test_utils ----
 add_executable(test_utils
   tests/test_utils.cpp
-  src/utils.cpp
 )
 
 target_include_directories(test_utils PRIVATE include)
@@ -69,7 +67,6 @@ gtest_discover_tests(test_utils
 # ---- Unit Test: test_simulation ----
 add_executable(test_simulation
   tests/test_simulation.cpp
-  src/utils.cpp
   src/simulation.cpp
 )
 

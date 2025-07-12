@@ -1,23 +1,25 @@
 #include "plot.hpp"
+#include "logger.hpp"
+
 namespace plt = matplotlibcpp;
 
 void render_plot(std::string &filename) {
   std::ifstream file(filename);
   if (!file.is_open()) {
-    std::cerr << "Failed to open file: " << filename << "\n";
+    log(ERROR, "Failed to open file: " + filename);
     return;
   }
 
   std::map<std::string, int> total_wins, total_games;
   std::string line;
-
-  // Read and parse data
+  
+  log(DEBUG, "Parsing data from " + filename + " ...");
   while (std::getline(file, line)) {
     std::stringstream ss(line);
     std::string strategy;
     int wins = 0, losses = 0;
 
-    // Simple parsing: strategy:X,wins:Y,losses:Z
+    // format => strategy:X,wins:Y,losses:Z
     if (line.find("hold") != std::string::npos)
       strategy = "Hold";
     else if (line.find("switch") != std::string::npos)
@@ -46,7 +48,11 @@ void render_plot(std::string &filename) {
     win_rates.push_back(rate);
   }
 
-  plt::figure_size(600, 600);
+  int plot_width = 600;
+  int plot_height= 600;
+  log(DEBUG, "Generating plot ...");
+  plt::figure_size(plot_width, plot_height);
+  log(DEBUG, "Plot dimensions " + std::to_string(plot_width) + "x" + std::to_string(plot_height));
   std::vector<double> x_pos = {0, 1};
   plt::bar(std::vector<double>{x_pos[0]}, std::vector<double>{win_rates[0]},
            "blue");
@@ -67,8 +73,9 @@ void render_plot(std::string &filename) {
   if (ext_pos != std::string::npos) {
     img_filename.replace(ext_pos, 4, ".png");
   } else {
-    img_filename += ".png"; 
+    img_filename += ".png";
   }
   plt::save(img_filename);
+  log(INFO, "Saved plot data to " + img_filename);
   // plt::show();
 }
